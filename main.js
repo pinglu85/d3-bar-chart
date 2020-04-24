@@ -99,7 +99,7 @@ d3.json(url)
           .replace(/(^\d)(?=\d{3,})/, '$1,');
         tooltip.transition().duration(200).style('opacity', 0.9);
         tooltip
-          .html(`${years[1]}<br>$${gdp} Billion`)
+          .html(`${years[i]}<br>$${gdp} Billion`)
           .attr('data-date', data.data[i][0])
           .style('left', `${i * barWidth + 30}px`)
           .style('top', `${height - 50}px`)
